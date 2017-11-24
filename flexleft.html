@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>flex左移</title>
+    <style>
+        .main{
+            padding: 10px;
+            border: 1px solid gray;
+            display: flex;
+            display: -webkit-flex; /*Safari*/
+
+            /*水平分布*/
+            /*-webkit-flex-direction: row;
+            flex-direction: row;
+            !*flex-start左移，flex-end右移*!
+            -webkit-justify-content: flex-end;
+            justify-content: flex-end;*/
+
+            /*垂直分布*/
+            -webkit-flex-direction: column;
+            flex-direction: column;
+            -webkit-align-items: flex-start;
+            -align-items: flex-start;
+        }
+        .content{
+            background: orange;
+            height: 100px;
+            width: 100px;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+<div class="main">
+    <div class="content"></div>
+    <div class="content"></div>
+    <div class="content"></div>
+    <div class="content"></div>
+    <div class="content"></div>
+</div>
+</body>
+</html>

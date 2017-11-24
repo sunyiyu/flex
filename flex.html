@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>flex布局</title>
+    <style>
+        .main{
+            padding: 10px;
+            border: 1px solid gray;
+            display: flex;
+            display: -webkit-flex; /*Safari*/
+            /*横向排列*/
+            -webkit-flex-direction: row;
+            flex-direction: row;
+            -webkit-align-items: flex-start;
+            align-items: flex-start;
+
+            /*纵向排列*/
+            /*-webkit-flex-direction: column;
+            flex-direction: column;
+            -webkit-justify-content: flex-start;
+            justify-content: flex-start;*/
+        }
+        .content{
+            background: orange;
+            height: 100px;
+            width: 100px;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+<!--http://www.gbtags.com/gb/share/2437.htm-->
+<!--http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html-->
+<div class="main">
+    <div class="content"></div>
+    <div class="content"></div>
+    <div class="content"></div>
+    <div class="content"></div>
+    <div class="content"></div>
+</div>
+</body>
+</html>
