@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>order</title>
+
+    <style>
+
+        .main{
+            height: 500px;
+            padding: 10px;
+            border: 1px solid gray;
+            display: flex;
+            display: -webkit-flex; /*Safari*/
+        }
+        .content:nth-child(3){
+            order: 1;
+            -webkit-order: 1;
+            background-color: red;
+        }
+        .content:nth-child(6){
+            -webkit-order: 2;
+            order: 2;
+            background-color: green;
+        }
+        .content{
+            background: orange;
+            height: 100px;
+            width: 100px;
+            margin: 5px;
+        }
+    </style>
+
+</head>
+<body id="body">
+<p>order属性定义项目的排列顺序。数值越小，排列越靠前，默认为0</p>
+<div class="main" id="myEl">
+    <div class="content"></div>
+    <div class="content"></div>
+    <div class="content"></div>
+    <div class="content"></div>
+    <div class="content"></div>
+    <div class="content"></div>
+    <div class="content"></div>
+    <div class="content"></div>
+    <div class="content"></div>
+    <div class="content"></div>
+    <div class="content"></div>
+    <div class="content"></div>
+    <div class="content"></div>
+    <div class="content"></div>
+    <div class="content"></div>
+    <div class="content"></div>
+    <div class="content"></div>
+</div>
+</body>
+</html>

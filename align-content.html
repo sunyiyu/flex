@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>align-content</title>
+    <style>
+        .main{
+            height: 500px;
+            padding: 10px;
+            border: 1px solid gray;
+            display: flex;
+            display: -webkit-flex; /*Safari*/
+            /*flex-start顶端对齐，flex-end底端对齐，center中间对齐，space-between两端对齐，apace-around项目两侧距离相等，stretch撑满*/
+            flex-content: flex-start;
+            -webkit-flex-content: flex-start;
+        }
+        .content{
+            background: orange;
+            height: 100px;
+            width: 100px;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+<p>多跟轴心（多行）的对齐方式。如果项目只有一根轴线，该属性不起作用。</p>
+<div class="main">
+    <div class="content"></div>
+    <div class="content"></div>
+    <div class="content"></div>
+    <div class="content"></div>
+    <div class="content"></div>
+    <div class="content"></div>
+    <div class="content"></div>
+    <div class="content"></div>
+    <div class="content"></div>
+    <div class="content"></div>
+    <div class="content"></div>
+    <div class="content"></div>
+    <div class="content"></div>
+    <div class="content"></div>
+    <div class="content"></div>
+    <div class="content"></div>
+    <div class="content"></div>
+</div>
+</body>
+</html>

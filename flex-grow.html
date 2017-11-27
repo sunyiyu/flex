@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>flex-grow</title>
+    <style>
+
+        #main {
+            width: 350px;
+            height: 100px;
+            border: 1px solid #c3c3c3;
+            display: flex;
+        }
+
+        #main div:nth-of-type(1) {flex-grow: 1;}
+        #main div:nth-of-type(2) {flex-grow: 1;}
+        #main div:nth-of-type(3) {flex-grow: 1;}
+
+        #myBlueDiv
+        {
+            animation:mymove 5s infinite;
+            /*Safari 和 Chrome:*/
+            -webkit-animation:mymove 5s infinite;
+        }
+
+        @keyframes mymove
+        {
+            50% {flex-grow:8;}
+        }
+
+        /*Safari 和 Chrome:*/
+        @-webkit-keyframes mymove
+        {
+            50% {flex-grow:8;}
+        }
+    </style>
+
+</head>
+<body>
+
+<p>"blue DIV" 的 flex-grow 属性逐渐地从 1 变化到 8，然后再变回 1：<p>
+<p>flex-grow属性定义项目的放大比例，默认为0，即如果存在剩余空间，也不放大。</p>
+<p>如果所有项目的flex-grow属性都为1，则它们将等分剩余空间（如果有的话）。如果一个项目的flex-grow属性为2，其他项目都为1，则前者占据的剩余空间将比其他项多一倍。</p>
+
+<div id="main">
+    <div style="background-color:coral;"></div>
+    <div style="background-color:lightblue;" id="myBlueDiv"></div>
+    <div style="background-color:khaki;"></div>
+</div>
+
+<p>在 CSS 中，flex-grow 属性是 <em>可动画化（animatable）</em> 的。</p>
+
+</body>
+</html>

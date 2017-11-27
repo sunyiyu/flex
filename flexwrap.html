@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>换行</title>
+    <style>
+        .main{
+            height: 500px;
+            padding: 10px;
+            border: 1px solid gray;
+            display: flex;
+            display: -webkit-flex; /*Safari*/
+            /*默认不换行nowrap，wrap-reverse第一行在下*/
+            flex-wrap: wrap;
+            -webkit-flex-wrap: wrap;
+        }
+        .content{
+            background: orange;
+            height: 100px;
+            width: 100px;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+<div class="main">
+    <div class="content"></div>
+    <div class="content"></div>
+    <div class="content"></div>
+    <div class="content"></div>
+    <div class="content"></div>
+    <div class="content"></div>
+    <div class="content"></div>
+    <div class="content"></div>
+    <div class="content"></div>
+    <div class="content"></div>
+    <div class="content"></div>
+    <div class="content"></div>
+    <div class="content"></div>
+    <div class="content"></div>
+    <div class="content"></div>
+    <div class="content"></div>
+    <div class="content"></div>
+</div>
+</body>
+</html>
